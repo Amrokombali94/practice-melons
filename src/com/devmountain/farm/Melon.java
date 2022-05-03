@@ -23,6 +23,12 @@ public class Melon {
 		this.field = field;
 		this.harvester = harvester;
 	}
+	public String isSellable(){
+		if(this.shapeRating > 5 && this.colorRating > 5 && this.field != 3){
+			return "(CAN BE SOLD)";
+		}
+		return "(NOT SELLABLE)";
+	}
 
 }
 
